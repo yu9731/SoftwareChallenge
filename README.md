@@ -1,1 +1,8 @@
 # SoftwareChallenge
+I have used the tools, that often used for web-crawling tasks, such as request-, beautifulsoup- and re-Libraries, to finish this challenge. And the code has been already submitted as "SoftwareChallenge.py". This process spent circa 2 hours, included the attempt of other methodes and debugging of the code.
+
+During this process, my first imagine is to traversal all products with a automatically change of weibsites to get all the information. But when it comes to the information "delivery time","neddle size" and "composition", these informations must be in different weibsites that represents different products found. So I have to get all urls, that can represent all the products, to get these informations, which makes it more complex.
+
+Another problem is usage of the tool scrapy. This is my first time to use this tool, due to this, there were also many problems, when it comes to use this tool. The two mainly problem is the quote of the class that definited in item.py, which have I tried so many times but eventuelly failed. Another problems is the use of the response.css function to get the information from the HTML-Code. I have both tried the methodes of response and beautifulsoup to get the informations, but neither of them are worked.
+
+For the imagine of using scrapy, I have planned for these steps: Firstly, I will define three Class, that can represent different products, to quote in the main program. Then I will set the pipeline.py to store the data, and then set the settings.py to get these items worked. After that, the information will be extracted in the HTML-Code and then as a HTML-form document be stored.
